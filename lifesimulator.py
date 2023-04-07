@@ -12,9 +12,10 @@ def slow_print(string):
         wait(0.08)
     print()
 
+# Backspace for TI 84
 def backspace(lines):
     for i in range(lines):
-        print("\033[F\033[K", end="", flush=True)
+        print("\b \b", end="", flush=True)
 
 def fast_print(string):
     for char in string:
@@ -196,7 +197,7 @@ backspace(2)
 fast_print(" The best fucking text based\n game you'll ever play.")
 wait(0.9)
 backspace(2)
-fast_print(" You're probably wondering\n what the fuck this game even is.")
+fast_print(" You're probably wondering\n what the fuck this game even\n is.")
 wait(0.9)
 backspace(2)
 fast_print(" Well... It's so fucking slay\n that you won't even know what\n to do with yourself.")
