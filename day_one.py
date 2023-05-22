@@ -1,4 +1,7 @@
-from functions import *
+try:
+    from lifefunc import *
+except:
+    from LIFEFUNC import *
 
 # DAY ONE
 
