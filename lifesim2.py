@@ -1,7 +1,13 @@
 import time
 import random
-from day_one import day_one
-from functions import *
+try:
+    from day_one import day_one
+except:
+    from DAY_ONE import day_one
+try: 
+    from lifefunc import *
+except:
+    from LIFEFUNC import *
 
 import keyboard
 # from ti_system import wait_key
