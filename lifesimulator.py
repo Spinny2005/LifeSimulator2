@@ -85,6 +85,6 @@ fast_print(" Here are your current stats:")
 fast_print(" Nerdyness: " + str(get_nerdyness()))
 fast_print(" Strength: " + str(get_strength()))
 fast_print(" Happiness: " + str(get_happiness()))
-fast_print(" Health: " + str(get_health))
+fast_print(" Health: " + str(get_health()))
 
 # DAY TWO

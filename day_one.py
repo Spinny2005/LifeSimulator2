@@ -61,21 +61,25 @@ def day_one():
             fast_print(" 2. Hide behind the crowd")
             fast_print(" 3. Stay in the hallway")
         hide_choice = menu(3)
+        clear_screen()
         if (hide_choice == correct_hide_2 + 1):
             fast_print(" The seniors and juniors still\n do not find you.")
-            wait(0.5)
+            wait(1)
             clear_screen()
         else:
             fast_print(
                 " They catch you hiding and\n start talking to you about\n their clubs and personal\n experiences.")
+            wait(1.2)
             success_level = False
     else:
         fast_print(
             " They catch you hiding and\n start talking to you about\n their clubs and personal\n experiences.")
+        wait(1.2)
         success_level = False
 
+    clear_screen()
     fast_print(" Wow. You made it. Crazy.")
-    wait(0.5)
+    wait(1)
     clear_screen()
 
     if (success_level == False):
@@ -148,6 +152,7 @@ def day_one():
 
     intro = menu(4)
 
+    clear_screen()
     fast_print(" You introduce yourself.")
     wait(0.7)
     fast_print(" They do not give a fuck.\n")
@@ -194,12 +199,12 @@ def day_one():
         wait(1.5)
     elif (intro == 4):
         fast_print(" They don't seem to care about\n sports.\n")
-        wait(0.2)
+        wait(0.7)
         fast_print(" But that means your strong or\n something. Idk.\n")
-        wait(0.2)
+        wait(1)
         fast_print(
             " So you get bonus stats!\n It makes no sense but just go\n with it.")
-        wait(1)
+        wait(1.5)
         clear_screen()
         fast_print(" Updated Stats:")
         fast_print(" Nerdyness: " + str(get_nerdyness()))
@@ -257,6 +262,7 @@ def day_one():
 
     fast_print(" The group leads you to the\n " +
                selected_class + "\n classroom.")
+    wait(0.7)
     clear_screen()
 
     has_phone = True
@@ -311,13 +317,16 @@ def day_one():
             elif (english_choice == 3):
                 has_teachers_book = True
                 fast_print(" No one sees you take the book.\n")
+                wait(0.7)
                 fast_print(" You're asked to take a seat.\n")
                 wait(1.2)
                 clear_screen()
                 book_choice = 2
         if (book_choice == 2):
             fast_print(" You sit down at a empty table\n in the back.\n")
+            wait(0.7)
             fast_print(" The teacher comes in to talk\n about their class.\n")
+            wait(0.7)
             fast_print(" Will you:")
             fast_print(" 1. Pay attention")
             fast_print(" 2. Go to the bathroom")
@@ -340,13 +349,17 @@ def day_one():
                 wait(1.5)
                 clear_screen()
 
-                fast_print("You know this game gets\n better right?\n")
+                fast_print(" You know this game gets\n better right?\n")
                 wait(0.5)
                 fast_print(" Well...")
                 wait(0.5)
                 fast_print(" Boring choice. Boring game...\n")
                 wait(2)
                 fast_print(" Just Kidding... >:)")
+                wait(1)
+                clear_screen()
+                fast_print(
+                    " You and your group leave the\n classroom after the teacher\n finishes talking")
                 wait(1)
                 clear_screen()
             elif (english_choice == 2):
@@ -392,10 +405,10 @@ def day_one():
             fast_print(" You listen to their conversation.\n")
             wait(0.5)
             fast_print(" You hear them talking about\n how the school just updated\n their accounts and how the\n passwords were sent to each\n teacher through email.\n")
-            wait(1.5)
+            wait(2)
             fast_print(
                 " The teacher and group leader\n stop talking and the teacher\n begins to talk to the class.\n")
-            wait(1)
+            wait(1.5)
             knows_email = True
             clear_screen()
         if (algebra_choice == 2):
@@ -412,17 +425,17 @@ def day_one():
             return
         fast_print(
             " The teacher tells you to grab\n a chromebook so they can\n show you how to log in.\n")
-        wait(1)
+        wait(1.5)
         fast_print(
             " They show you the website\n that you will use to see your\n grades and assignments.\n")
-        wait(1)
+        wait(1.5)
         clear_screen()
         fast_print(" *You remember the website*")
         wait(0.7)
         clear_screen()
         fast_print(
             " The group leader tells everyone\n that they are moving on to\n the next activity.\n")
-        wait(1)
+        wait(1.5)
         clear_screen()
         knows_website = True
 
@@ -608,8 +621,11 @@ def day_one():
 
     if (choice == 3):
         fast_print(" Hahahahahahaha\n")
+        wait(0.5)
         fast_print(" You're so funny and edgy.\n")
+        wait(0.5)
         fast_print(" You must be the funniest person\n on Earth!\n")
+        wait(0.5)
         fast_print(
             " The group members see you leave\n to jump in front of the\n bus and stop you.")
         wait(1.5)
@@ -791,24 +807,24 @@ def day_one():
     damage_taken = False
     if (escape_choice == 1):
         fast_print(" You look around the room.\n")
-        wait(0.5)
+        wait(0.7)
         fast_print(" You see a hole in the wall.\n")
-        wait(0.5)
+        wait(0.7)
         fast_print(" You crawl through the hole.\n")
-        wait(0.5)
+        wait(1)
         clear_screen()
         fast_print(" You realize the wall leads to\n the bathroom.\n")
-        wait(0.5)
+        wait(1)
         fast_print(
             " You run for the door but\n the ground begins to shake\n again.\n")
-        wait(0.5)
+        wait(1)
         fast_print(" You slip and fall and hit\n your head on the toilet.\n")
-        wait(0.5)
+        wait(1)
         clear_screen()
         fast_print(" You take 2 damage\n")
-        wait(0.7)
+        wait(1)
         fast_print(" Yeah thats right... I'm\n adding damage now.\n")
-        wait(0.5)
+        wait(1)
         clear_screen()
         fast_print(" Updated Stats:")
         fast_print(" Nerdyness: " + str(get_nerdyness()))
@@ -827,10 +843,11 @@ def day_one():
         print(" Health: " + str(get_health()))
         wait(1.5)
         fast_print(" Deal with it, bitch.\n")
-        wait(0.5)
+        wait(0.7)
         fast_print(" Anyways...")
-        wait(0.5)
+        wait(0.7)
         fast_print(" You're knocked out now.")
+        wait(1)
         damage_taken = True
     elif (escape_choice == 2):
         if (has_phone):
@@ -847,18 +864,18 @@ def day_one():
         else:
             fast_print(
                 " You reach into your pocket\n for your phone but realize\n that it was taken by the\n teacher.")
-            wait(0.5)
+            wait(1.5)
             fast_print(
                 " You walk towards the door\n to see if you can see anyone\n through the window.\n")
-            wait(0.7)
+            wait(1.5)
             fast_print(
                 " Suddenly you are hit on the\n head by a lose ceiling panel.\n")
-            wait(0.7)
+            wait(1)
             clear_screen()
             fast_print(" You take 2 damage\n")
-            wait(0.7)
+            wait(1)
             fast_print(" Yeah thats right... I'm\n adding damage now.\n")
-            wait(0.5)
+            wait(1)
             clear_screen()
             fast_print(" Updated Stats:")
             fast_print(" Nerdyness: " + str(get_nerdyness()))
@@ -877,35 +894,36 @@ def day_one():
             print(" Health: " + str(get_health()))
             wait(1.5)
             fast_print(" Deal with it, bitch.\n")
-            wait(0.5)
+            wait(0.7)
             fast_print(" Anyways...")
-            wait(0.5)
+            wait(0.7)
             fast_print(" You're knocked out now.")
+            wait(1)
             damage_taken = True
     elif (escape_choice == 3):
-        if (int(get_strength) > 10):
+        if (int(get_strength()) > 10):
             fast_print(
                 " You bang on the door until\n it breaks open and you\n fall throught it.")
-            wait(0.5)
+            wait(1)
             fast_print(
                 " You get up and see a rescue\n team helping other students.")
-            wait(0.7)
+            wait(1.2)
             fast_print(
                 " They start rushing over to\n you as you pass out from\n exhaustion.")
-            wait(0.7)
+            wait(1.2)
             clear_screen()
         else:
             fast_print(
                 " You bang on the door but\n arent strong enough to\n break it open.")
-            wait(0.7)
+            wait(1.2)
             fast_print(
                 " Suddenly you are hit on the\n head by a lose ceiling panel.\n")
-            wait(0.7)
+            wait(1)
             clear_screen()
             fast_print(" You take 2 damage\n")
-            wait(0.7)
+            wait(1)
             fast_print(" Yeah thats right... I'm\n adding damage now.\n")
-            wait(0.5)
+            wait(1)
             clear_screen()
             fast_print(" Updated Stats:")
             fast_print(" Nerdyness: " + str(get_nerdyness()))
@@ -924,23 +942,24 @@ def day_one():
             print(" Health: " + str(get_health()))
             wait(1.5)
             fast_print(" Deal with it, bitch.\n")
-            wait(0.5)
+            wait(0.7)
             fast_print(" Anyways...")
-            wait(0.5)
+            wait(0.7)
             fast_print(" You're knocked out now.")
+            wait(1)
             damage_taken = True
     else:
         fast_print(" You wait for someone to find\n you.\n")
-        wait(0.7)
+        wait(1)
         fast_print(" You begin to fall asleep.\n")
-        wait(0.7)
+        wait(1)
         fast_print(" In your sleep you roll onto\n sharp debris.")
-        wait(0.7)
+        wait(1)
         clear_screen()
         fast_print(" You take 1 damage\n")
-        wait(0.7)
+        wait(1)
         fast_print(" Yeah thats right... I'm\n adding damage now.\n")
-        wait(0.5)
+        wait(1)
         clear_screen()
         fast_print(" Updated Stats:")
         fast_print(" Nerdyness: " + str(get_nerdyness()))
@@ -959,15 +978,16 @@ def day_one():
         print(" Health: " + str(get_health()))
         wait(1.5)
         fast_print(" Deal with it, bitch.\n")
-        wait(0.5)
+        wait(0.7)
         fast_print(" Anyways...")
-        wait(0.5)
+        wait(0.7)
         fast_print(" You're knocked out now.")
+        wait(1)
         damage_taken = True
 
     fast_print(
         " You dream sad miserable dreams\n as you are taken away from\n the school.")
-    wait(0.7)
+    wait(1.2)
     clear_screen()
 
     return
